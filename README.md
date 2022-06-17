@@ -3,6 +3,10 @@ Here is Blender`s Shakify addon in Unity!
 
 
 
+https://user-images.githubusercontent.com/6388730/174351323-a61f2193-fc28-4cca-8ca2-4e6c2361e0db.mp4
+
+
+
 # Installation:
 Method 1:
 Download UnityPackage from release page and import into your project.
