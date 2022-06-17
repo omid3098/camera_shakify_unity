@@ -1,5 +1,5 @@
 # Camera Shakify Unity
-Here is Blender`s Shakify addon in Unity!
+Here is [Blender`s Shakify addon](https://github.com/EatTheFuture/camera_shakify) in Unity!
 
 
 
