@@ -20,5 +20,8 @@ Method 2:
 
 Note: Sometimes its better to have a separate parent on camera to apply these transformations to it.
 
-Todo:
+## Article
+You can read the article about how I did this on [Medium](https://medium.com/@omid3098/real-life-camera-shake-in-unity-ffae4b5976ac).
+
+## Todo:
 Add these shakedata to Cinemachine Virtual cameras noise component.
