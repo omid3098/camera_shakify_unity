@@ -13,7 +13,7 @@ Download UnityPackage from release page and import into your project.
 
 Method 2:
 - Clone this repo into your project
-- if you want to check all the source, add [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes) to remove compile errors. if you dont care about the source, remove Editor folder.
+- if you want to check all the source, add [NaughtyAttributes](https://github.com/dbrizov/NaughtyAttributes) and "com.unity.nuget.newtonsoft-json": "3.0.2" to your manifest.json to remove compile errors. if you dont care about the source, remove Editor folder.
 
 # How to use:
 - Add Shakify component to your camera and assign a scriptable shake data to it.
