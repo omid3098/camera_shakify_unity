@@ -14,7 +14,25 @@ namespace Shakfy.Core
         private void Awake()
         {
             // get the last frame of the animation
-            lastTime = _shakeData.PosX.keys.Length - 1;
+            // Some shadeData might not have any keys, so we need to check for all PosX, PosY, PosZ and RotX, RotY, RotZ
+            int[] lengths = new int[6];
+            if (_shakeData.PosX != null) lengths[0] = _shakeData.PosX.keys.Length;
+            if (_shakeData.PosY != null) lengths[1] = _shakeData.PosY.keys.Length;
+            if (_shakeData.PosZ != null) lengths[2] = _shakeData.PosZ.keys.Length;
+            if (_shakeData.RotX != null) lengths[3] = _shakeData.RotX.keys.Length;
+            if (_shakeData.RotY != null) lengths[4] = _shakeData.RotY.keys.Length;
+            if (_shakeData.RotZ != null) lengths[5] = _shakeData.RotZ.keys.Length;
+
+            int max = lengths[0];
+            for (int i = 1; i < lengths.Length; i++)
+            {
+                if (lengths[i] > max)
+                {
+                    max = lengths[i];
+                }
+            }
+
+            lastTime = max - 1;
             lastPosition = Vector3.zero;
             lastRotation = Quaternion.identity;
         }
